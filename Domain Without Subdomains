@@ -1,1 +1,3 @@
-/(?:^\s*https?:\/\/)(?:[\w\d\-\.]*?)\.?((?:[\w\d\-]*)\.(?:(?:co|com|org|gov|net|edu|coop|biz)\.[\w]{2}|[\w\d\-]*))(?:\/|$)/gm
+Possible problems:
+    uses \s which counts newlines, which means the match will include beginning newlines. Delete the \s if you want to avoid it.
+(?:^\s*https?:\/\/)(?:[\w\d\-\.]*?)\.?((?:[\w\d\-]*)\.(?:(?:co|com|org|gov|net|edu|coop|biz)\.[\w]{2}|[\w\d\-]*))(?:\/|$)
