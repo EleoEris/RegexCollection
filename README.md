@@ -1,2 +1,2 @@
 # RegexCollection
-A collection of regex patterns I use
+I'll post here useful regex that I've created for various projects
